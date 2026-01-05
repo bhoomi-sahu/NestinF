@@ -1,7 +1,7 @@
 # 🏠 NestIn - Room Rental Platform
 
 Welcome to **NestIn** — a modern room renting web application where users can **search for places**, 
-**add their own listings**, **leave reviews**, and even **explore rooms on a map** powered by **Lifey**. Built with the **MERN Stack** 
+**add their own listings**, **leave reviews**, and even **Check a map** powered by **Lifey**. Built with the **Full-stack Stack** 
 (MongoDB, Express, Node.js, and Vanilla JS for frontend), it's a fully functional platform designed for real-world use.
 
 🌐 **Live Demo:** https://nestinf.onrender.com
@@ -15,15 +15,15 @@ Welcome to **NestIn** — a modern room renting web application where users can 
 - 🏡 **Add New Listings** – Login and post your own rooms or properties for rent.
 - 📝 **Reviews** – Leave feedback for any listing after login.
 - 👤 **User Authentication** – Secure login and register using sessions.
-- 📸 **Image Uploads** – Upload photos of your listings.
+  
 
 ---
 
 ## 🛠️ Tech Stack
 
 **Frontend:**
-- HTML5
-- CSS3
+- HTML
+- CSS
 - JavaScript (Vanilla)
 
 **Backend:**
