@@ -4,7 +4,7 @@ Welcome to **NestIn** — a modern room renting web application where users can 
 **add their own listings**, **leave reviews**, and even **explore rooms on a map** powered by **Lifey**. Built with the **MERN Stack** 
 (MongoDB, Express, Node.js, and Vanilla JS for frontend), it's a fully functional platform designed for real-world use.
 
-🌐 **Live Demo:** [https://nestin-qd8j.onrender.com](https://nestin-qd8j.onrender.com)
+🌐 **Live Demo:** https://nestinf.onrender.com
 
 ---
 
