@@ -1,0 +1,112 @@
+/* ================================
+   STAR RATING (STARABILITY) – FIXED
+================================ */
+
+/* Result stars (readonly display) */
+.starability-result {
+  position: relative;
+  width: 150px;
+  height: 30px;
+  background-image: url("data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAB4AAAA8CAMAAABGivqt...");
+  background-repeat: no-repeat;
+  background-position: 0 -30px;
+  background-size: 30px auto;
+}
+
+/* Rating text */
+.starability-result::after {
+  content: attr(data-rating) " ★";
+  position: absolute;
+  right: -42px;
+  top: 4px;
+  font-size: 14px;
+  font-weight: 600;
+  color: #1f2937;
+}
+
+/* ✅ DARK MODE FIX */
+body.dark .starability-result::after {
+  color: #e5e7eb;
+}
+
+/* =================================
+   INTERACTIVE STAR INPUT
+================================= */
+.starability-slot {
+  display: flex;
+  gap: 4px;
+  width: 150px;
+  height: 30px;
+  position: relative;
+}
+
+.starability-slot input {
+  position: absolute;
+  opacity: 0;
+  pointer-events: none;
+}
+
+/* Star icons */
+.starability-slot label {
+  width: 30px;
+  height: 30px;
+  cursor: pointer;
+  background-image: url("data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAB4AAAA8CAMAAABGivqt...");
+  background-size: 30px auto;
+  background-position: 0 -30px;
+  transition: transform 0.2s ease, filter 0.2s ease;
+}
+
+/* Hover animation */
+.starability-slot label:hover {
+  transform: scale(1.15);
+  filter: drop-shadow(0 0 6px gold);
+}
+
+/* Selected + hover fill */
+.starability-slot input:checked ~ label,
+.starability-slot input:hover ~ label {
+  background-position: 0 0;
+}
+
+/* Focus accessibility */
+.starability-slot input:focus + label {
+  outline: 2px solid #ff385c;
+  outline-offset: 2px;
+}
+
+/* =================================
+   DARK MODE STAR FIX
+================================= */
+body.dark .starability-slot label {
+  filter: brightness(1.15);
+}
+
+body.dark .starability-slot label:hover {
+  filter: brightness(1.25) drop-shadow(0 0 6px #facc15);
+}
+
+/* =================================
+   MOBILE RESPONSIVE
+================================= */
+@media (max-width: 768px) {
+  .starability-result {
+    width: 120px;
+  }
+
+  .starability-slot {
+    width: 120px;
+  }
+
+  .starability-slot label {
+    width: 24px;
+    height: 24px;
+    background-size: 24px auto;
+  }
+
+  .starability-result::after {
+    right: -36px;
+    font-size: 13px;
+  }
+}
+
