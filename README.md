@@ -44,7 +44,6 @@ Welcome to **NestIn** — a modern room renting web application where users can 
 - connect-mongo & express-session (authentication)
 
 ---
-
 ## 📂 Folder Structure
 
 
